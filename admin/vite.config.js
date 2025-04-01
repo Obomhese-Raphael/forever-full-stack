@@ -11,14 +11,18 @@ export default defineConfig({
         "react",
         "react-dom",
         "react-router-dom",
-        "react-toastify", // Add this line
+        "react-toastify",
+        "axios", // Add axios here
+        "@stripe/stripe-js", // Add if using Stripe
       ],
     },
   },
   optimizeDeps: {
     include: [
       "react-router-dom",
-      "react-toastify", // Add this line
+      "react-toastify",
+      "axios", // Add axios here
+      "@stripe/stripe-js", // Add if using Stripe
     ],
   },
 });
